@@ -10,3 +10,5 @@
 * qemu+gdb
 
 
+## ref doc
+ARM体系结构与编程第二版

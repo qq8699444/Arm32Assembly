@@ -12,4 +12,6 @@ set(CMAKE_CXX_FLAGS_DEBUG "-Wall -O0 -ggdb")
 set(CMAKE_CXX_FLAGS_RELEASE "-Wall -O0 -ggdb")
 
 add_executable(addressing addressing.c)
-#add_executable(add add.c)
+add_executable(loadStrore loadStrore.c)
+add_executable(loadStrore2 loadStrore2.c)
+add_executable(batch batch.c)
