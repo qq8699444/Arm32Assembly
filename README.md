@@ -1,3 +1,12 @@
-## Arm32Assembly
+## prepare env
+* install qemu-user
+* install g++-arm-linux-gnueabi
 
-111
+
+## run 
+* qemu-arm exec-file
+
+## debug
+* qemu+gdb
+
+
