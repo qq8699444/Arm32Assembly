@@ -20,3 +20,7 @@ add_executable(dataProcess dataProcess.c)
 add_executable(multify multify.c)
 add_executable(clz clz.c)
 add_executable(mrs mrs.c)
+
+add_executable(swp swp.c)
+target_link_libraries(swp pthread )
+add_executable(swi swi.c)
