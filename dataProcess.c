@@ -68,10 +68,9 @@ void test_add()
     asm volatile(        
         "adds %1, %3, %5          \n"  
         "adc  %0, %4, %2          \n"             
-        :"=r"(vh),      //0
-         "=r"(vl)   
-        :"0"(vh),      //0
-         "1"(vl) ,       //1
+        :"+r"(vh),      //0
+         "+r"(vl)   
+        :
         "r"(ah),       //2
          "r"(al), 
          "r"(bh),       //4
@@ -79,7 +78,7 @@ void test_add()
         :"cc", "memory","r0","r1","r2","r3"
     );
     printf("v: %#x %3x\n", vh, vl); 
-    //assert(v == ~0x3f);
+    assert(vh == 9);
 }
 
 
